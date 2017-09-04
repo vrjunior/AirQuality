@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4908407D1F4D220900E112E9 /* MeasurementServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908407C1F4D220900E112E9 /* MeasurementServices.swift */; };
+		490840821F4D269C00E112E9 /* FakeMeasurementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490840811F4D269C00E112E9 /* FakeMeasurementService.swift */; };
+		499271FA1F4CD65600BC631A /* OpenAQMeasureServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499271F91F4CD65500BC631A /* OpenAQMeasureServices.swift */; };
+		49A4CB991F4C5B0900AEEFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CB981F4C5B0900AEEFDF /* AppDelegate.swift */; };
+		49A4CB9E1F4C5B0900AEEFDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A4CB9C1F4C5B0900AEEFDF /* Main.storyboard */; };
+		49A4CBA01F4C5B0900AEEFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A4CB9F1F4C5B0900AEEFDF /* Assets.xcassets */; };
+		49A4CBA31F4C5B0900AEEFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A4CBA11F4C5B0900AEEFDF /* LaunchScreen.storyboard */; };
+		49A4CBAE1F4C5BFE00AEEFDF /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBAD1F4C5BFE00AEEFDF /* CountryCell.swift */; };
+		49A4CBB11F4C5CBA00AEEFDF /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBB01F4C5CBA00AEEFDF /* Country.swift */; };
+		49A4CBB31F4C5D7B00AEEFDF /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBB21F4C5D7B00AEEFDF /* CountryViewController.swift */; };
+		49A4CBB61F4C607C00AEEFDF /* CountryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBB51F4C607C00AEEFDF /* CountryServices.swift */; };
+		49A4CBB81F4C62AB00AEEFDF /* FlagMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBB71F4C62AB00AEEFDF /* FlagMapper.swift */; };
+		49A4CBBA1F4C633D00AEEFDF /* FakeCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBB91F4C633D00AEEFDF /* FakeCountryService.swift */; };
+		49A4CBBC1F4C7F4900AEEFDF /* OpenAQCountryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBBB1F4C7F4900AEEFDF /* OpenAQCountryServices.swift */; };
+		49A4CBBE1F4CB22900AEEFDF /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBBD1F4CB22900AEEFDF /* LocationViewController.swift */; };
+		49A4CBC01F4CB23F00AEEFDF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBBF1F4CB23F00AEEFDF /* Location.swift */; };
+		49A4CBC21F4CB33300AEEFDF /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBC11F4CB33300AEEFDF /* LocationServices.swift */; };
+		49A4CBC41F4CB34E00AEEFDF /* OpenAQLocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBC31F4CB34E00AEEFDF /* OpenAQLocationServices.swift */; };
+		49A4CBC61F4CB47100AEEFDF /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A4CBC51F4CB47100AEEFDF /* Measure.swift */; };
+		D20931B61F5754370095B11D /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20931B51F5754370095B11D /* LocationCell.swift */; };
+		D2157BC91F587C9C00D03E6C /* AQIAssistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */; };
+		D2157BCC1F589C4D00D03E6C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2157BCB1F589C4D00D03E6C /* Double.swift */; };
+		D21C51561F5D7AE900CD9E25 /* MeasureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */; };
+		D25142111F546A8C00FE7508 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25142101F546A8C00FE7508 /* CityViewController.swift */; };
+		D25142131F55E96900FE7508 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25142121F55E96900FE7508 /* CityCell.swift */; };
+		D25F1F041F4F4D0D0045EF7F /* OpenAQCityServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */; };
+		D25F1F061F4F4F9B0045EF7F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F051F4F4F9B0045EF7F /* City.swift */; };
+		D25F1F081F4F50F90045EF7F /* CityServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F071F4F50F90045EF7F /* CityServices.swift */; };
+		D28025D01F59A09B0001982E /* MeasureResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28025CF1F59A09B0001982E /* MeasureResumeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4908407C1F4D220900E112E9 /* MeasurementServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementServices.swift; sourceTree = "<group>"; };
+		490840811F4D269C00E112E9 /* FakeMeasurementService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMeasurementService.swift; sourceTree = "<group>"; };
+		499271F91F4CD65500BC631A /* OpenAQMeasureServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAQMeasureServices.swift; sourceTree = "<group>"; };
+		49A4CB951F4C5B0900AEEFDF /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A4CB981F4C5B0900AEEFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49A4CB9D1F4C5B0900AEEFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49A4CB9F1F4C5B0900AEEFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49A4CBA21F4C5B0900AEEFDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49A4CBA41F4C5B0900AEEFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A4CBAD1F4C5BFE00AEEFDF /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		49A4CBB01F4C5CBA00AEEFDF /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		49A4CBB21F4C5D7B00AEEFDF /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		49A4CBB51F4C607C00AEEFDF /* CountryServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryServices.swift; sourceTree = "<group>"; };
+		49A4CBB71F4C62AB00AEEFDF /* FlagMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagMapper.swift; sourceTree = "<group>"; };
+		49A4CBB91F4C633D00AEEFDF /* FakeCountryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCountryService.swift; sourceTree = "<group>"; };
+		49A4CBBB1F4C7F4900AEEFDF /* OpenAQCountryServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAQCountryServices.swift; sourceTree = "<group>"; };
+		49A4CBBD1F4CB22900AEEFDF /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		49A4CBBF1F4CB23F00AEEFDF /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		49A4CBC11F4CB33300AEEFDF /* LocationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		49A4CBC31F4CB34E00AEEFDF /* OpenAQLocationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAQLocationServices.swift; sourceTree = "<group>"; };
+		49A4CBC51F4CB47100AEEFDF /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		D20931B51F5754370095B11D /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIAssistance.swift; sourceTree = "<group>"; };
+		D2157BCB1F589C4D00D03E6C /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureCell.swift; sourceTree = "<group>"; };
+		D25142101F546A8C00FE7508 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		D25142121F55E96900FE7508 /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAQCityServices.swift; sourceTree = "<group>"; };
+		D25F1F051F4F4F9B0045EF7F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D25F1F071F4F50F90045EF7F /* CityServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityServices.swift; sourceTree = "<group>"; };
+		D28025CF1F59A09B0001982E /* MeasureResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureResumeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49A4CB921F4C5B0900AEEFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4908407E1F4D25E400E112E9 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBB51F4C607C00AEEFDF /* CountryServices.swift */,
+				49A4CBC11F4CB33300AEEFDF /* LocationServices.swift */,
+				4908407C1F4D220900E112E9 /* MeasurementServices.swift */,
+				D25F1F071F4F50F90045EF7F /* CityServices.swift */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		4908407F1F4D25EB00E112E9 /* Open AQ Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBBB1F4C7F4900AEEFDF /* OpenAQCountryServices.swift */,
+				49A4CBC31F4CB34E00AEEFDF /* OpenAQLocationServices.swift */,
+				499271F91F4CD65500BC631A /* OpenAQMeasureServices.swift */,
+				D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */,
+				D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */,
+			);
+			name = "Open AQ Implementation";
+			sourceTree = "<group>";
+		};
+		490840801F4D25F700E112E9 /* Fake Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBB91F4C633D00AEEFDF /* FakeCountryService.swift */,
+				490840811F4D269C00E112E9 /* FakeMeasurementService.swift */,
+			);
+			name = "Fake Implementation";
+			sourceTree = "<group>";
+		};
+		49A4CB8C1F4C5B0900AEEFDF = {
+			isa = PBXGroup;
+			children = (
+				49A4CB971F4C5B0900AEEFDF /* AirQuality */,
+				49A4CB961F4C5B0900AEEFDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49A4CB961F4C5B0900AEEFDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CB951F4C5B0900AEEFDF /* AirQuality.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49A4CB971F4C5B0900AEEFDF /* AirQuality */ = {
+			isa = PBXGroup;
+			children = (
+				D2157BCA1F589C4000D03E6C /* Extensions */,
+				49A4CBAA1F4C5B2400AEEFDF /* Model */,
+				49A4CBAB1F4C5B2A00AEEFDF /* View */,
+				49A4CBAC1F4C5B3200AEEFDF /* Controller */,
+				49A4CB981F4C5B0900AEEFDF /* AppDelegate.swift */,
+				49A4CB9F1F4C5B0900AEEFDF /* Assets.xcassets */,
+				49A4CBA11F4C5B0900AEEFDF /* LaunchScreen.storyboard */,
+				49A4CBA41F4C5B0900AEEFDF /* Info.plist */,
+			);
+			path = AirQuality;
+			sourceTree = "<group>";
+		};
+		49A4CBAA1F4C5B2400AEEFDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBB41F4C5DCD00AEEFDF /* Services */,
+				49A4CBAF1F4C5C3E00AEEFDF /* VO */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		49A4CBAB1F4C5B2A00AEEFDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CB9C1F4C5B0900AEEFDF /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		49A4CBAC1F4C5B3200AEEFDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D28025D11F59A0A00001982E /* Measure */,
+				D20931B41F5754270095B11D /* Location */,
+				D20931B31F57541A0095B11D /* City */,
+				D20931B21F57540E0095B11D /* Country */,
+				49A4CBB71F4C62AB00AEEFDF /* FlagMapper.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		49A4CBAF1F4C5C3E00AEEFDF /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBB01F4C5CBA00AEEFDF /* Country.swift */,
+				49A4CBBF1F4CB23F00AEEFDF /* Location.swift */,
+				49A4CBC51F4CB47100AEEFDF /* Measure.swift */,
+				D25F1F051F4F4F9B0045EF7F /* City.swift */,
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
+		49A4CBB41F4C5DCD00AEEFDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				490840801F4D25F700E112E9 /* Fake Implementation */,
+				4908407F1F4D25EB00E112E9 /* Open AQ Implementation */,
+				4908407E1F4D25E400E112E9 /* Interfaces */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D20931B21F57540E0095B11D /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBAD1F4C5BFE00AEEFDF /* CountryCell.swift */,
+				49A4CBB21F4C5D7B00AEEFDF /* CountryViewController.swift */,
+			);
+			name = Country;
+			sourceTree = "<group>";
+		};
+		D20931B31F57541A0095B11D /* City */ = {
+			isa = PBXGroup;
+			children = (
+				D25142101F546A8C00FE7508 /* CityViewController.swift */,
+				D25142121F55E96900FE7508 /* CityCell.swift */,
+			);
+			name = City;
+			sourceTree = "<group>";
+		};
+		D20931B41F5754270095B11D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				49A4CBBD1F4CB22900AEEFDF /* LocationViewController.swift */,
+				D20931B51F5754370095B11D /* LocationCell.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		D2157BCA1F589C4000D03E6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2157BCB1F589C4D00D03E6C /* Double.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D28025D11F59A0A00001982E /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				D28025CF1F59A09B0001982E /* MeasureResumeViewController.swift */,
+				D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */,
+			);
+			name = Measure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49A4CB941F4C5B0900AEEFDF /* AirQuality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A4CBA71F4C5B0900AEEFDF /* Build configuration list for PBXNativeTarget "AirQuality" */;
+			buildPhases = (
+				49A4CB911F4C5B0900AEEFDF /* Sources */,
+				49A4CB921F4C5B0900AEEFDF /* Frameworks */,
+				49A4CB931F4C5B0900AEEFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirQuality;
+			productName = AirQuality;
+			productReference = 49A4CB951F4C5B0900AEEFDF /* AirQuality.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49A4CB8D1F4C5B0900AEEFDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = BEPiD;
+				TargetAttributes = {
+					49A4CB941F4C5B0900AEEFDF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5W8YC8Y5Q7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 49A4CB901F4C5B0900AEEFDF /* Build configuration list for PBXProject "AirQuality" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49A4CB8C1F4C5B0900AEEFDF;
+			productRefGroup = 49A4CB961F4C5B0900AEEFDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49A4CB941F4C5B0900AEEFDF /* AirQuality */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49A4CB931F4C5B0900AEEFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4CBA31F4C5B0900AEEFDF /* LaunchScreen.storyboard in Resources */,
+				49A4CBA01F4C5B0900AEEFDF /* Assets.xcassets in Resources */,
+				49A4CB9E1F4C5B0900AEEFDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49A4CB911F4C5B0900AEEFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25F1F081F4F50F90045EF7F /* CityServices.swift in Sources */,
+				49A4CBC21F4CB33300AEEFDF /* LocationServices.swift in Sources */,
+				49A4CBB81F4C62AB00AEEFDF /* FlagMapper.swift in Sources */,
+				D25F1F061F4F4F9B0045EF7F /* City.swift in Sources */,
+				49A4CBB11F4C5CBA00AEEFDF /* Country.swift in Sources */,
+				D25142131F55E96900FE7508 /* CityCell.swift in Sources */,
+				D20931B61F5754370095B11D /* LocationCell.swift in Sources */,
+				49A4CBBC1F4C7F4900AEEFDF /* OpenAQCountryServices.swift in Sources */,
+				D21C51561F5D7AE900CD9E25 /* MeasureCell.swift in Sources */,
+				49A4CB991F4C5B0900AEEFDF /* AppDelegate.swift in Sources */,
+				490840821F4D269C00E112E9 /* FakeMeasurementService.swift in Sources */,
+				D2157BCC1F589C4D00D03E6C /* Double.swift in Sources */,
+				49A4CBB31F4C5D7B00AEEFDF /* CountryViewController.swift in Sources */,
+				49A4CBC61F4CB47100AEEFDF /* Measure.swift in Sources */,
+				49A4CBC01F4CB23F00AEEFDF /* Location.swift in Sources */,
+				D25142111F546A8C00FE7508 /* CityViewController.swift in Sources */,
+				49A4CBBA1F4C633D00AEEFDF /* FakeCountryService.swift in Sources */,
+				49A4CBC41F4CB34E00AEEFDF /* OpenAQLocationServices.swift in Sources */,
+				4908407D1F4D220900E112E9 /* MeasurementServices.swift in Sources */,
+				499271FA1F4CD65600BC631A /* OpenAQMeasureServices.swift in Sources */,
+				49A4CBBE1F4CB22900AEEFDF /* LocationViewController.swift in Sources */,
+				49A4CBB61F4C607C00AEEFDF /* CountryServices.swift in Sources */,
+				D25F1F041F4F4D0D0045EF7F /* OpenAQCityServices.swift in Sources */,
+				D2157BC91F587C9C00D03E6C /* AQIAssistance.swift in Sources */,
+				49A4CBAE1F4C5BFE00AEEFDF /* CountryCell.swift in Sources */,
+				D28025D01F59A09B0001982E /* MeasureResumeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49A4CB9C1F4C5B0900AEEFDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A4CB9D1F4C5B0900AEEFDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49A4CBA11F4C5B0900AEEFDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A4CBA21F4C5B0900AEEFDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49A4CBA51F4C5B0900AEEFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49A4CBA61F4C5B0900AEEFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49A4CBA81F4C5B0900AEEFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5W8YC8Y5Q7;
+				INFOPLIST_FILE = AirQuality/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepid.AirQuality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		49A4CBA91F4C5B0900AEEFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5W8YC8Y5Q7;
+				INFOPLIST_FILE = AirQuality/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepid.AirQuality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49A4CB901F4C5B0900AEEFDF /* Build configuration list for PBXProject "AirQuality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A4CBA51F4C5B0900AEEFDF /* Debug */,
+				49A4CBA61F4C5B0900AEEFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A4CBA71F4C5B0900AEEFDF /* Build configuration list for PBXNativeTarget "AirQuality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A4CBA81F4C5B0900AEEFDF /* Debug */,
+				49A4CBA91F4C5B0900AEEFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49A4CB8D1F4C5B0900AEEFDF /* Project object */;
+}
