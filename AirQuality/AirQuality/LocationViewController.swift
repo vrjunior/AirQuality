@@ -55,7 +55,9 @@ class LocationViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == self.measureSegue) {
-            let measureViewController = segue.destination as! MeasureResumeViewController
+            let measureNavigationController = segue.destination as! UINavigationController
+            let measureViewController = measureNavigationController.topViewController as! MeasureResumeViewController
+            
             
             let location = sender as! Location
             

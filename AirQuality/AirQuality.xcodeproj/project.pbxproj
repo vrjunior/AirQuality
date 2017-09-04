@@ -30,6 +30,7 @@
 		D2157BC91F587C9C00D03E6C /* AQIAssistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */; };
 		D2157BCC1F589C4D00D03E6C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2157BCB1F589C4D00D03E6C /* Double.swift */; };
 		D21C51561F5D7AE900CD9E25 /* MeasureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */; };
+		D24F3EDC1F5D8CFA005A0D74 /* AirQualityResume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24F3EDB1F5D8CFA005A0D74 /* AirQualityResume.storyboard */; };
 		D25142111F546A8C00FE7508 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25142101F546A8C00FE7508 /* CityViewController.swift */; };
 		D25142131F55E96900FE7508 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25142121F55E96900FE7508 /* CityCell.swift */; };
 		D25F1F041F4F4D0D0045EF7F /* OpenAQCityServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */; };
@@ -64,6 +65,7 @@
 		D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIAssistance.swift; sourceTree = "<group>"; };
 		D2157BCB1F589C4D00D03E6C /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureCell.swift; sourceTree = "<group>"; };
+		D24F3EDB1F5D8CFA005A0D74 /* AirQualityResume.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AirQualityResume.storyboard; sourceTree = "<group>"; };
 		D25142101F546A8C00FE7508 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D25142121F55E96900FE7508 /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAQCityServices.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4CB9C1F4C5B0900AEEFDF /* Main.storyboard */,
+				D24F3EDB1F5D8CFA005A0D74 /* AirQualityResume.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24F3EDC1F5D8CFA005A0D74 /* AirQualityResume.storyboard in Resources */,
 				49A4CBA31F4C5B0900AEEFDF /* LaunchScreen.storyboard in Resources */,
 				49A4CBA01F4C5B0900AEEFDF /* Assets.xcassets in Resources */,
 				49A4CB9E1F4C5B0900AEEFDF /* Main.storyboard in Resources */,
