@@ -36,7 +36,7 @@ class OpenAQCityServices : CityServices {
             if error == nil  && data != nil {
                 do {
                     let citiesJSON = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                    let cities = self.parseCities(jsonObj: citiesJSON, country: country)
+                    let cities = self.parseCities(json: citiesJSON, country: country)
                     
                     completion(cities)
                 }
@@ -53,23 +53,37 @@ class OpenAQCityServices : CityServices {
         task.resume()
     }
     
-    func parseCities(jsonObj: Any, country: Country) -> [City] {
-        
-        var cities = [City]()
+    func parseCities(json: Any, country: Country) -> [City]? {
         
         
-        if let jsonObj = jsonObj as? NSDictionary {
-            
-            guard let result = jsonObj["results"] as? [NSDictionary] else {
+        if let json = json as? NSDictionary {
+        
+            if let results = json["results"] as? NSArray {
+                var cities = [City]()
+                
+                for cityData in results {
+                    if let city = parseCity(json: cityData, country: country) {
+                        cities.append(city)
+                    }
+                }
+                
                 return cities
             }
+        }
+        
+        return nil
+    }
+    
+    func parseCity(json: Any, country: Country) -> City? {
+        
+        if let cityData = json as? NSDictionary {
             
-            for cityJson in result {
-                if let cityName = cityJson["city"] as? String {
-                    cities.append(City(name: cityName, country: country))
-                }
+            if let cityName = cityData["city"] as? String {
+                return City(name: cityName, country: country)
             }
         }
-        return cities
+        
+        return nil
+        
     }
 }

@@ -111,7 +111,7 @@ class OpenAQMeasureServices: MeasurementServices {
     ///
     /// - Parameter json: JSON fragment containgin the list of measurement events
     /// - Returns: List of air quality measurement events
-    fileprivate func parseMeasures(_ json:Any) -> [Measure]? {
+    public func parseMeasures(_ json:Any) -> [Measure]? {
         
         var measures = [Measure]()
         
@@ -140,7 +140,7 @@ class OpenAQMeasureServices: MeasurementServices {
     ///
     /// - Parameter json: JSON fragment representing an air quality measurement
     /// - Returns: An Air Quality measurement, nil if information is erred or unavailable
-    fileprivate func parseMeasure(_ json:Any) -> Measure? {
+    public func parseMeasure(_ json:Any) -> Measure? {
         
         if let measureData = json as? NSDictionary {
             

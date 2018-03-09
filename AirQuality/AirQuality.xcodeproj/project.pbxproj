@@ -30,14 +30,32 @@
 		D2157BC91F587C9C00D03E6C /* AQIAssistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */; };
 		D2157BCC1F589C4D00D03E6C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2157BCB1F589C4D00D03E6C /* Double.swift */; };
 		D21C51561F5D7AE900CD9E25 /* MeasureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */; };
+		D23E3C452050729800CA57B1 /* AirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E3C442050729800CA57B1 /* AirQualityTests.swift */; };
+		D23E3C4D2050770A00CA57B1 /* APICityTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E3C4C2050770A00CA57B1 /* APICityTestClass.swift */; };
 		D24F3EDC1F5D8CFA005A0D74 /* AirQualityResume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24F3EDB1F5D8CFA005A0D74 /* AirQualityResume.storyboard */; };
 		D25142111F546A8C00FE7508 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25142101F546A8C00FE7508 /* CityViewController.swift */; };
 		D25142131F55E96900FE7508 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25142121F55E96900FE7508 /* CityCell.swift */; };
 		D25F1F041F4F4D0D0045EF7F /* OpenAQCityServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */; };
 		D25F1F061F4F4F9B0045EF7F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F051F4F4F9B0045EF7F /* City.swift */; };
 		D25F1F081F4F50F90045EF7F /* CityServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F1F071F4F50F90045EF7F /* CityServices.swift */; };
+		D273C9012051A2B900B13531 /* AQIAssistanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273C9002051A2B900B13531 /* AQIAssistanceTest.swift */; };
+		D273C9032051C2C500B13531 /* CountriesRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273C9022051C2C500B13531 /* CountriesRequestTest.swift */; };
+		D273C9052051C35100B13531 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = D273C9042051C35100B13531 /* countries.json */; };
+		D273C9072051D6E700B13531 /* CityParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273C9062051D6E700B13531 /* CityParseTests.swift */; };
+		D2779B94205302B5003777B3 /* LocationParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2779B93205302B5003777B3 /* LocationParseTests.swift */; };
+		D2779B9620530E19003777B3 /* MeasurementParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2779B9520530E19003777B3 /* MeasurementParseTests.swift */; };
 		D28025D01F59A09B0001982E /* MeasureResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28025CF1F59A09B0001982E /* MeasureResumeViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D23E3C472050729800CA57B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A4CB8D1F4C5B0900AEEFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A4CB941F4C5B0900AEEFDF;
+			remoteInfo = AirQuality;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4908407C1F4D220900E112E9 /* MeasurementServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementServices.swift; sourceTree = "<group>"; };
@@ -65,17 +83,34 @@
 		D2157BC81F587C9C00D03E6C /* AQIAssistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQIAssistance.swift; sourceTree = "<group>"; };
 		D2157BCB1F589C4D00D03E6C /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		D21C51551F5D7AE900CD9E25 /* MeasureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureCell.swift; sourceTree = "<group>"; };
+		D23E3C422050729800CA57B1 /* AirQualityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirQualityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23E3C442050729800CA57B1 /* AirQualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityTests.swift; sourceTree = "<group>"; };
+		D23E3C462050729800CA57B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D23E3C4C2050770A00CA57B1 /* APICityTestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICityTestClass.swift; sourceTree = "<group>"; };
 		D24F3EDB1F5D8CFA005A0D74 /* AirQualityResume.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AirQualityResume.storyboard; sourceTree = "<group>"; };
 		D25142101F546A8C00FE7508 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D25142121F55E96900FE7508 /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		D25F1F031F4F4D0D0045EF7F /* OpenAQCityServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAQCityServices.swift; sourceTree = "<group>"; };
 		D25F1F051F4F4F9B0045EF7F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		D25F1F071F4F50F90045EF7F /* CityServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityServices.swift; sourceTree = "<group>"; };
+		D273C9002051A2B900B13531 /* AQIAssistanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIAssistanceTest.swift; sourceTree = "<group>"; };
+		D273C9022051C2C500B13531 /* CountriesRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRequestTest.swift; sourceTree = "<group>"; };
+		D273C9042051C35100B13531 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		D273C9062051D6E700B13531 /* CityParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityParseTests.swift; sourceTree = "<group>"; };
+		D2779B93205302B5003777B3 /* LocationParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationParseTests.swift; sourceTree = "<group>"; };
+		D2779B9520530E19003777B3 /* MeasurementParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementParseTests.swift; sourceTree = "<group>"; };
 		D28025CF1F59A09B0001982E /* MeasureResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureResumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		49A4CB921F4C5B0900AEEFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23E3C3F2050729800CA57B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -121,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4CB971F4C5B0900AEEFDF /* AirQuality */,
+				D23E3C432050729800CA57B1 /* AirQualityTests */,
 				49A4CB961F4C5B0900AEEFDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4CB951F4C5B0900AEEFDF /* AirQuality.app */,
+				D23E3C422050729800CA57B1 /* AirQualityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +271,22 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		D23E3C432050729800CA57B1 /* AirQualityTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2779B9520530E19003777B3 /* MeasurementParseTests.swift */,
+				D2779B93205302B5003777B3 /* LocationParseTests.swift */,
+				D273C9062051D6E700B13531 /* CityParseTests.swift */,
+				D273C9022051C2C500B13531 /* CountriesRequestTest.swift */,
+				D273C9002051A2B900B13531 /* AQIAssistanceTest.swift */,
+				D23E3C4C2050770A00CA57B1 /* APICityTestClass.swift */,
+				D23E3C442050729800CA57B1 /* AirQualityTests.swift */,
+				D23E3C462050729800CA57B1 /* Info.plist */,
+				D273C9042051C35100B13531 /* countries.json */,
+			);
+			path = AirQualityTests;
+			sourceTree = "<group>";
+		};
 		D28025D11F59A0A00001982E /* Measure */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,13 +316,31 @@
 			productReference = 49A4CB951F4C5B0900AEEFDF /* AirQuality.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D23E3C412050729800CA57B1 /* AirQualityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23E3C4B2050729800CA57B1 /* Build configuration list for PBXNativeTarget "AirQualityTests" */;
+			buildPhases = (
+				D23E3C3E2050729800CA57B1 /* Sources */,
+				D23E3C3F2050729800CA57B1 /* Frameworks */,
+				D23E3C402050729800CA57B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D23E3C482050729800CA57B1 /* PBXTargetDependency */,
+			);
+			name = AirQualityTests;
+			productName = AirQualityTests;
+			productReference = D23E3C422050729800CA57B1 /* AirQualityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		49A4CB8D1F4C5B0900AEEFDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = BEPiD;
 				TargetAttributes = {
@@ -277,6 +348,12 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5W8YC8Y5Q7;
 						ProvisioningStyle = Automatic;
+					};
+					D23E3C412050729800CA57B1 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 5W8YC8Y5Q7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 49A4CB941F4C5B0900AEEFDF;
 					};
 				};
 			};
@@ -294,6 +371,7 @@
 			projectRoot = "";
 			targets = (
 				49A4CB941F4C5B0900AEEFDF /* AirQuality */,
+				D23E3C412050729800CA57B1 /* AirQualityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +385,14 @@
 				49A4CBA31F4C5B0900AEEFDF /* LaunchScreen.storyboard in Resources */,
 				49A4CBA01F4C5B0900AEEFDF /* Assets.xcassets in Resources */,
 				49A4CB9E1F4C5B0900AEEFDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23E3C402050729800CA57B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D273C9052051C35100B13531 /* countries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +432,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D23E3C3E2050729800CA57B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2779B94205302B5003777B3 /* LocationParseTests.swift in Sources */,
+				D23E3C4D2050770A00CA57B1 /* APICityTestClass.swift in Sources */,
+				D273C9072051D6E700B13531 /* CityParseTests.swift in Sources */,
+				D23E3C452050729800CA57B1 /* AirQualityTests.swift in Sources */,
+				D2779B9620530E19003777B3 /* MeasurementParseTests.swift in Sources */,
+				D273C9032051C2C500B13531 /* CountriesRequestTest.swift in Sources */,
+				D273C9012051A2B900B13531 /* AQIAssistanceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D23E3C482050729800CA57B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A4CB941F4C5B0900AEEFDF /* AirQuality */;
+			targetProxy = D23E3C472050729800CA57B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49A4CB9C1F4C5B0900AEEFDF /* Main.storyboard */ = {
@@ -489,6 +597,60 @@
 			};
 			name = Release;
 		};
+		D23E3C492050729800CA57B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5W8YC8Y5Q7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AirQualityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrmassoni.AirQualityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirQuality.app/AirQuality";
+			};
+			name = Debug;
+		};
+		D23E3C4A2050729800CA57B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5W8YC8Y5Q7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = AirQualityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrmassoni.AirQualityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirQuality.app/AirQuality";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -506,6 +668,15 @@
 			buildConfigurations = (
 				49A4CBA81F4C5B0900AEEFDF /* Debug */,
 				49A4CBA91F4C5B0900AEEFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23E3C4B2050729800CA57B1 /* Build configuration list for PBXNativeTarget "AirQualityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23E3C492050729800CA57B1 /* Debug */,
+				D23E3C4A2050729800CA57B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

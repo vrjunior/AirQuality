@@ -6,12 +6,12 @@
 //  Copyright © 2017 BEPiD. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class OpenAQCountryServices: CountryServices {
     
     let countryURL = "https://api.openaq.org/v1/countries"
-    
+        
     func retrieveCoutries(completion:@escaping ([Country]?) -> Void) {
         
         guard let url = URL(string: countryURL) else {
